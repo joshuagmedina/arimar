@@ -229,3 +229,46 @@ a:hover { opacity: 0.75; }
   font-size: 12px;
   color: var(--muted-55b);
 }
+
+/* Cookie consent banner */
+.consent-banner {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 100;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 12px 16px;
+  padding: 14px 20px;
+  background: oklch(24% 0.02 40);
+  color: oklch(96% 0.012 60);
+  font-size: 13px;
+}
+.consent-text {
+  max-width: 320px;
+}
+.consent-actions {
+  display: flex;
+  gap: 8px;
+  flex-shrink: 0;
+}
+.consent-btn {
+  padding: 8px 16px;
+  border-radius: var(--radius-sm);
+  font-size: 13px;
+  font-weight: 700;
+  font-family: inherit;
+  cursor: pointer;
+  border: 1px solid oklch(96% 0.012 60);
+}
+.consent-accept {
+  background: oklch(96% 0.012 60);
+  color: oklch(24% 0.02 40);
+}
+.consent-decline {
+  background: transparent;
+  color: oklch(96% 0.012 60);
+}
