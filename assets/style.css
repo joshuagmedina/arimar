@@ -357,11 +357,6 @@ a:hover { opacity: 0.75; }
 .newsletter-status[data-state="success"] { color: oklch(85% 0.1 145); }
 .newsletter-status[data-state="error"] { color: oklch(85% 0.1 30); }
 
-.offer-wrap {
-  width: 100%;
-  margin-top: 20px;
-}
-
 /* Footer */
 .footer {
   margin-top: 28px;
