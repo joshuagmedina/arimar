@@ -18,13 +18,10 @@ GitHub Pages is served straight from this repo (Settings → Pages → Deploy fr
 
 See inline `TODO` comments in `index.html`:
 
-1. Real Amazon Storefront affiliate URL
-2. Real ShopMy URL
-3. Active Promotion row — currently commented out in `index.html`; uncomment and fill in when a promo goes live
-4. Real Instagram and TikTok profile URLs on the social icons
-5. Current Offer row — real offer URL and promo code (currently `SAVE20` placeholder)
-6. Follower/like counts are static text in `index.html` — update manually, or wire to a live data source later
-7. Custom domain — once set up, add a `CNAME` file at the repo root with the domain, and point DNS at GitHub Pages
+1. Active Promotion row — currently commented out in `index.html`; uncomment and fill in when a promo goes live
+2. Firmo offer row — real destination URL still needed (code `XPFD50` is real)
+3. Follower/like counts are static text in `index.html` — update manually, or wire to a live data source later
+4. Custom domain — once set up, add a `CNAME` file at the repo root with the domain, and point DNS at GitHub Pages
 
 This branch (`simple-launch`) is a stripped-down version for a quick first publish — no newsletter signup or "Latest TikToks" section. Those live on `main`.
 
