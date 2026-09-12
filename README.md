@@ -12,18 +12,16 @@ python3 -m http.server 8000
 
 ## Deploying
 
-GitHub Pages is served straight from this repo (Settings → Pages → Deploy from a branch → `main` / `/ (root)`). Any push to `main` updates the live site.
+GitHub Pages is served straight from this repo (Settings → Pages → Deploy from a branch → `main` / `/ (root)`). Any push to `main` updates the live site at [arimar.me](https://arimar.me) (custom domain via the `CNAME` file at the repo root; DNS is on GoDaddy).
 
 ## Outstanding stubs before launch
 
 See inline `TODO` comments in `index.html`:
 
 1. Active Promotion row — currently commented out in `index.html`; uncomment and fill in when a promo goes live
-2. Firmo offer row — real destination URL still needed (code `XPFD50` is real)
-3. Follower/like counts are static text in `index.html` — update manually, or wire to a live data source later
-4. Custom domain — once set up, add a `CNAME` file at the repo root with the domain, and point DNS at GitHub Pages
+2. Follower/like counts are static text in `index.html` — update manually, or wire to a live data source later
 
-This branch (`simple-launch`) is a stripped-down version for a quick first publish — no newsletter signup or "Latest TikToks" section. Those live on `main`.
+This branch (`main`) is the stripped-down version for a quick launch — no newsletter signup or "Latest TikToks" section. That fuller version lives on `feat/newsletter`.
 
 ## Design source
 
