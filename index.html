@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Ariana Del Mar</title>
-<meta name="description" content="Ariana Del Mar — creator, food, health, beauty, mom, family. Links, latest TikToks, and newsletter signup.">
+<meta name="description" content="Ariana Del Mar — creator, food, health, beauty, mom, family. Links to my favorite picks and current offers.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Helvetica+Neue:wght@400;500;700&display=swap" rel="stylesheet">
@@ -104,16 +104,6 @@
         </a>
       </li>
 
-      <li>
-        <a class="link-row" href="#newsletter" target="_self">
-          <span class="link-icon icon-glyph-lg">&#9993;</span>
-          <span class="link-text">
-            <span class="link-title">Newsletter Signup</span>
-            <span class="link-subtitle">Mom advice, weekly</span>
-          </span>
-        </a>
-      </li>
-
       <!-- TODO: real offer URL, promo code, and expiry copy once a live offer is ready -->
       <li>
         <a class="link-row is-promo" href="#" target="_blank" rel="noopener">
@@ -145,51 +135,9 @@
       </div>
     </div>
 
-    <!-- TikTok row -->
-    <div class="tiktok-section">
-      <h2 class="section-heading">Latest TikToks</h2>
-      <div class="tiktok-scroll">
-        <!-- TODO: replace each card below with a real TikTok embed (oEmbed/iframe) once video URLs are provided -->
-        <a class="tiktok-card" href="#" target="_blank" rel="noopener">
-          <span class="tiktok-play">&#9654;</span>
-          <span class="tiktok-caption">TikTok embed<br>paste video URL</span>
-        </a>
-        <a class="tiktok-card" href="#" target="_blank" rel="noopener">
-          <span class="tiktok-play">&#9654;</span>
-          <span class="tiktok-caption">TikTok embed<br>paste video URL</span>
-        </a>
-        <a class="tiktok-card" href="#" target="_blank" rel="noopener">
-          <span class="tiktok-play">&#9654;</span>
-          <span class="tiktok-caption">TikTok embed<br>paste video URL</span>
-        </a>
-      </div>
-    </div>
-
-    <!-- Newsletter -->
-    <div id="newsletter" class="newsletter">
-      <h2 class="newsletter-heading">Join the newsletter</h2>
-      <div class="newsletter-sub">Recipes, favorite finds, and honest reviews — straight to your inbox.</div>
-
-      <!--
-        Wired up via assets/script.js (fetch-based submit, see LISTMONK_ENDPOINT at
-        the top of that file). The action/target below are a plain-HTML fallback in
-        case JS is disabled.
-        TODO: set action to the real Listmonk endpoint, and add
-        <input type="hidden" name="l" value="LIST-UUID-HERE"> once known.
-      -->
-      <form id="newsletter-form" class="newsletter-form" action="#" method="post" target="_blank">
-        <input type="hidden" name="nonce" value="">
-        <label class="visually-hidden" for="newsletter-email">Email address</label>
-        <input class="newsletter-input" id="newsletter-email" type="email" name="email" required placeholder="your@email.com">
-        <button class="newsletter-submit" type="submit">Subscribe</button>
-      </form>
-      <div id="newsletter-status" class="newsletter-status" role="status" aria-live="polite"></div>
-    </div>
-
     <div class="footer">&copy; 2026 Ariana Del Mar</div>
 
   </div>
 </div>
-<script src="assets/script.js"></script>
 </body>
 </html>
