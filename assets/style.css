@@ -231,6 +231,9 @@ a:hover { opacity: 0.75; }
 }
 
 /* Cookie consent banner */
+.consent-banner[hidden] {
+  display: none;
+}
 .consent-banner {
   position: fixed;
   left: 0;
