@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ariana's Weekly Dashboard</title>
+<meta name="description" content="Ariana's Weekly Dashboard — this week's menu, favorite recipe, and thought of the week.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Helvetica+Neue:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+
+<!-- Google tag (gtag.js) -->
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  // Default: no analytics storage until the visitor accepts (see assets/consent.js).
+  gtag('consent', 'default', { 'analytics_storage': 'denied' });
+</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CNKJFL7KJE"></script>
+<script>
+  gtag('js', new Date());
+  gtag('config', 'G-CNKJFL7KJE');
+</script>
+</head>
+<body>
+<div class="page">
+  <div class="container">
+
+    <a class="back-link" href="index.html">&larr; Back to Ariana's links</a>
+
+    <h1 class="dashboard-title">Ariana's Weekly Dashboard</h1>
+
+    <!-- Menu de la semana -->
+    <div class="dashboard-section">
+      <h2 class="section-heading">Menu de la Semana</h2>
+      <ol class="menu-list">
+        <li>Steak and Potato Bites</li>
+        <li>BLT Sandwich</li>
+        <li>Tacos de Camarones</li>
+        <li>Pechuga en Salsa de Setas con Arroz con Cilantro</li>
+        <li>Pizza Night</li>
+        <li>Lomo de Cerdo con Majado de Papa</li>
+        <li>Arroz con Salchicha y Lomo de Cerdo</li>
+      </ol>
+    </div>
+
+    <!-- Mi favorito de la semana -->
+    <div class="dashboard-section">
+      <h2 class="section-heading section-heading--tight">Mi Favorito de la Semana</h2>
+      <div class="section-subheading">(hasta ahora)</div>
+      <div class="favorite-card">
+        <div class="favorite-image">
+          <img src="assets/favorite-week.png" alt="Pechuga en salsa de setas con arroz con cilantro">
+        </div>
+        <div class="favorite-text">
+          <span class="favorite-title">Pechuga en Salsa de Setas con Arroz con Cilantro</span>
+          <span class="favorite-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Pensamiento de la semana -->
+    <div class="dashboard-section">
+      <h2 class="section-heading">Pensamiento de la Semana</h2>
+      <div class="thought-card">
+        <span class="thought-mark" aria-hidden="true">&#8220;</span>
+        <p class="thought-text">Que sentimiento tan agridulce ha sido poder tener espacio de pensar y crear...</p>
+      </div>
+    </div>
+
+    <!-- Newsletter -->
+    <div id="newsletter" class="newsletter dashboard-section">
+      <h2 class="newsletter-heading">Join the newsletter</h2>
+      <div class="newsletter-sub">Thoughts, favorite meals, and recent finds — straight to your inbox.</div>
+      <form id="newsletter-form" class="newsletter-form" action="https://formspree.io/f/xppzvbkq" method="POST" target="_blank">
+        <label class="visually-hidden" for="newsletter-email">Email address</label>
+        <input class="newsletter-input" id="newsletter-email" type="email" name="email" required placeholder="your@email.com">
+        <button class="newsletter-submit" type="submit">Subscribe</button>
+      </form>
+      <div id="newsletter-status" class="newsletter-status" role="status" aria-live="polite"></div>
+    </div>
+
+    <div class="footer">&copy; 2026 Ariana Del Mar</div>
+
+  </div>
+</div>
+
+<div id="consent-banner" class="consent-banner" role="dialog" aria-label="Cookie consent" hidden>
+  <span class="consent-text">This site uses cookies for analytics.</span>
+  <div class="consent-actions">
+    <button id="consent-decline" class="consent-btn consent-decline" type="button">Decline</button>
+    <button id="consent-accept" class="consent-btn consent-accept" type="button">Accept</button>
+  </div>
+</div>
+<script src="assets/consent.js"></script>
+<script src="assets/newsletter.js"></script>
+</body>
+</html>

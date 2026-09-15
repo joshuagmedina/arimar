@@ -84,6 +84,22 @@
       -->
 
       <li>
+        <a class="link-row" href="dashboard.html" target="_self">
+          <span class="link-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="5" y="4" width="14" height="17" rx="2"></rect>
+              <path d="M9 3.5h6v2H9z"></path>
+              <path d="M8.5 11h7M8.5 14.5h7M8.5 18h4"></path>
+            </svg>
+          </span>
+          <span class="link-text">
+            <span class="link-title">Weekly Dashboard</span>
+            <span class="link-subtitle">This week's menu, favorite &amp; more</span>
+          </span>
+        </a>
+      </li>
+
+      <li>
         <a class="link-row" href="https://a.co/d/09SaV4Wx" target="_blank" rel="noopener">
           <span class="link-icon">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
@@ -114,6 +130,16 @@
       </li>
 
       <li>
+        <a class="link-row" href="#newsletter" target="_self">
+          <span class="link-icon icon-glyph-xl">&#9993;</span>
+          <span class="link-text">
+            <span class="link-title">Newsletter Signup</span>
+            <span class="link-subtitle">Starting end of September!!</span>
+          </span>
+        </a>
+      </li>
+
+      <li>
         <a class="link-row is-promo" href="https://tinyurl.com/55atnjmp" target="_blank" rel="noopener">
           <span class="link-icon icon-glyph-lg">%</span>
           <span class="link-text">
@@ -129,18 +155,30 @@
       <div class="stat-card">
         <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="oklch(30% 0.02 40)" stroke-width="1.8" style="width:56px;height:44px" aria-hidden="true"><rect x="2.5" y="2.5" width="19" height="19" rx="5.5"></rect><circle cx="12" cy="12" r="4.3"></circle><circle cx="17.3" cy="6.7" r="1.1" fill="oklch(30% 0.02 40)" stroke="none"></circle></svg>
         <div class="stat-text">
-          <span class="stat-count">6,300</span>
+          <span class="stat-count">6,390</span>
           <span class="stat-label">Instagram followers</span>
         </div>
       </div>
       <div class="stat-card">
         <svg width="28" height="28" viewBox="0 0 24 24" fill="oklch(30% 0.02 40)" style="width:46px;height:44px" aria-hidden="true"><path d="M16.6 2h-3.2v14.6a3.4 3.4 0 1 1-2.4-3.26V9.9a6.6 6.6 0 1 0 5.6 6.5V9.2a7.9 7.9 0 0 0 4.4 1.34V7.3A4.6 4.6 0 0 1 16.6 2z"></path></svg>
         <div class="stat-text">
-          <span class="stat-count">6,856</span>
+          <span class="stat-count">6,881</span>
           <span class="stat-label">TikTok followers</span>
-          <span class="stat-likes">&hearts; 124.6K likes</span>
+          <span class="stat-likes">&hearts; 124.8K likes</span>
         </div>
       </div>
+    </div>
+
+    <!-- Newsletter -->
+    <div id="newsletter" class="newsletter">
+      <h2 class="newsletter-heading">Join the newsletter</h2>
+      <div class="newsletter-sub">Thoughts, favorite meals, and recent finds — straight to your inbox.</div>
+      <form id="newsletter-form" class="newsletter-form" action="https://formspree.io/f/xppzvbkq" method="POST" target="_blank">
+        <label class="visually-hidden" for="newsletter-email">Email address</label>
+        <input class="newsletter-input" id="newsletter-email" type="email" name="email" required placeholder="your@email.com">
+        <button class="newsletter-submit" type="submit">Subscribe</button>
+      </form>
+      <div id="newsletter-status" class="newsletter-status" role="status" aria-live="polite"></div>
     </div>
 
     <div class="footer">&copy; 2026 Ariana Del Mar</div>
@@ -156,5 +194,6 @@
   </div>
 </div>
 <script src="assets/consent.js"></script>
+<script src="assets/newsletter.js"></script>
 </body>
 </html>
