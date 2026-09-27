@@ -396,16 +396,6 @@ a:hover { opacity: 0.75; }
   margin: 0 0 16px;
   color: var(--heading-ink);
 }
-.section-heading--tight {
-  margin-bottom: 4px;
-}
-.section-subheading {
-  font-size: 13px;
-  text-align: center;
-  color: var(--muted-50);
-  margin: 0 0 16px;
-}
-
 .menu-list {
   margin: 0;
   padding-left: 22px;
@@ -459,6 +449,24 @@ a:hover { opacity: 0.75; }
   font-size: 16px;
   letter-spacing: 2px;
   color: var(--accent);
+}
+.star-half {
+  position: relative;
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  vertical-align: top;
+}
+.star-half-bg,
+.star-half-fg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.star-half-fg {
+  width: 50%;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .thought-card {
